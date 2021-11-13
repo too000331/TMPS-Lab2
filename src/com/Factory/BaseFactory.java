@@ -1,7 +1,7 @@
 package com.Factory;
 
-import com.Furniture.Furniture;
+import com.Cars.Cars;
 
 public interface BaseFactory {
-    Furniture createFurniture(String type);
+    Cars createCars(String type);
 }

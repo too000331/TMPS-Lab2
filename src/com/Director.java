@@ -1,81 +1,105 @@
 package com;
 
-import com.Furniture.Builder.ChairBuilder;
-import com.Furniture.Builder.FurnitureBuilder;
-import com.Furniture.Builder.SofaBuilder;
-import com.Furniture.Builder.TableBuilder;
+import com.Cars.Builder.SedanBuilder;
+import com.Cars.Builder.CarsBuilder;
+import com.Cars.Builder.PickupTruckBuilder;
+import com.Cars.Builder.MinivanBuilder;
 
 public class Director {
 
-    public FurnitureBuilder makeModernChair(ChairBuilder builder){
+    public CarsBuilder makeFordSedan(SedanBuilder builder){
         builder.reset();
-        builder.setName("Chair");
-        builder.setStyle("Modern");
-        builder.setPrice(600f);
+        builder.setName("Sedan");
+        builder.setBrand("Ford");
+        builder.setPrice(19000f);
         return builder;
     }
 
-    public FurnitureBuilder makeModernSofa(SofaBuilder builder){
+    public CarsBuilder makeFordPickupTruck(PickupTruckBuilder builder){
         builder.reset();
-        builder.setName("Sofa");
-        builder.setStyle("Modern");
-        builder.setPrice(2000f);
+        builder.setName("pickup Truck");
+        builder.setBrand("Ford");
+        builder.setPrice(28940f);
         return builder;
     }
 
-    public FurnitureBuilder makeModernTable(TableBuilder builder){
+    public CarsBuilder makeFordMinivan(MinivanBuilder builder){
         builder.reset();
-        builder.setName("Chair");
-        builder.setStyle("Modern");
-        builder.setPrice(1700f);
+        builder.setName("Minivan");
+        builder.setBrand("Ford");
+        builder.setPrice(15300.65f);
         return builder;
     }
 
-    public FurnitureBuilder makeArtDecoChair(ChairBuilder builder){
+    public CarsBuilder makeMercedesSedan(SedanBuilder builder){
         builder.reset();
-        builder.setName("Chair");
-        builder.setStyle("Art Deco");
-        builder.setPrice(599f);
+        builder.setName("Sedan");
+        builder.setBrand("Mercedes");
+        builder.setPrice(20000f);
         return builder;
     }
 
-    public FurnitureBuilder makeArtDecoSofa(SofaBuilder builder){
+    public CarsBuilder makeMercedesPickupTruck(PickupTruckBuilder builder){
         builder.reset();
-        builder.setName("Sofa");
-        builder.setStyle("Art Deco");
-        builder.setPrice(3159f);
+        builder.setName("pickup Truck");
+        builder.setBrand("Mercedes");
+        builder.setPrice(23580f);
         return builder;
     }
 
-    public FurnitureBuilder makeArtDecoTable(TableBuilder builder){
+    public CarsBuilder makeMercedesMinivan(MinivanBuilder builder){
         builder.reset();
-        builder.setName("Table");
-        builder.setStyle("Art Deco");
-        builder.setPrice(2050f);
+        builder.setName("Minivan");
+        builder.setBrand("Mercedes");
+        builder.setPrice(17999f);
         return builder;
     }
 
-    public FurnitureBuilder makeCyberPunkChair(ChairBuilder builder){
+    public CarsBuilder makeToyotaSedan(SedanBuilder builder){
         builder.reset();
-        builder.setName("Chair");
-        builder.setStyle("CyberPunk");
-        builder.setPrice(1100f);
+        builder.setName("Sedan");
+        builder.setBrand("Toyota");
+        builder.setPrice(9700f);
         return builder;
     }
 
-    public FurnitureBuilder makeCyberPunkSofa(SofaBuilder builder){
+    public CarsBuilder makeToyotaPickupTruck(PickupTruckBuilder builder){
         builder.reset();
-        builder.setName("Sofa");
-        builder.setStyle("CyberPunk");
-        builder.setPrice(8999.99f);
+        builder.setName("Pickup Truck");
+        builder.setBrand("Toyota");
+        builder.setPrice(12456f);
         return builder;
     }
 
-    public FurnitureBuilder makeCyberPunkTable(TableBuilder builder){
+    public CarsBuilder makeToyotaMinivan(MinivanBuilder builder){
         builder.reset();
-        builder.setName("Table");
-        builder.setStyle("CyberPunk");
-        builder.setPrice(9999.99f);
+        builder.setName("Minivan");
+        builder.setBrand("Toyota");
+        builder.setPrice(8880f);
+        return builder;
+    }
+
+    public CarsBuilder makeVolkswagenSedan(SedanBuilder builder){
+        builder.reset();
+        builder.setName("Sedan");
+        builder.setBrand("Volkswagen");
+        builder.setPrice(5000f);
+        return builder;
+    }
+
+    public CarsBuilder makeVolkswagenPickupTruck(PickupTruckBuilder builder){
+        builder.reset();
+        builder.setName("Pickup Truck");
+        builder.setBrand("Volkswagen");
+        builder.setPrice(12999.99f);
+        return builder;
+    }
+
+    public CarsBuilder makeVolkswagenMinivan(MinivanBuilder builder){
+        builder.reset();
+        builder.setName("Minivan");
+        builder.setBrand("Volkswagen");
+        builder.setPrice(19750.50f);
         return builder;
     }
 }
